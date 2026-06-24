@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  /* Colors - Primary (MASTER.md) */
+  --color-primary: #7C3AED;
+  --color-primary-light: #A78BFA;
+  --color-primary-dark: #5B21B6;
+
+  /* Colors - Action (MASTER.md) */
+  --color-cta: #F97316;
+  --color-cta-light: #FDBA74;
+  --color-cta-dark: #EA580C;
+
+  /* Colors - Semantic (MASTER.md) */
+  --color-success: #10B981;
+  --color-success-light: #ECFDF5;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FFFBEB;
+  --color-destructive: #EF4444;
+  --color-destructive-light: #FEF2F2;
+
+  /* Colors - Neutral (MASTER.md) */
+  --color-bg: #FFFFFF;
+  --color-bg-secondary: #F9FAFB;
+  --color-bg-tertiary: #F3F4F6;
+  --color-text: #111827;
+  --color-text-secondary: #4B5563;
+  --color-text-tertiary: #9CA3AF;
+  --color-border: #E5E7EB;
+  --color-border-dark: #D1D5DB;
+  --color-divider: #F0F0F0;
+
+  /* MD3 Surface Colors (from HTML prototypes) */
+  --md3-background: #fef7ff;
+  --md3-surface: #fef7ff;
+  --md3-surface-container-lowest: #ffffff;
+  --md3-surface-container-low: #f9f1ff;
+  --md3-surface-container: #f3ebfa;
+  --md3-surface-container-high: #ede5f4;
+  --md3-surface-container-highest: #e8dfee;
+  --md3-surface-dim: #dfd7e6;
+  --md3-on-surface: #1d1a24;
+  --md3-on-surface-variant: #4a4455;
+  --md3-outline: #7b7487;
+  --md3-outline-variant: #ccc3d8;
+  --md3-primary: #7C3AED;
+  --md3-primary-fixed: #eaddff;
+  --md3-primary-fixed-dim: #d2bbff;
+  --md3-primary-container: #7c3aed;
+  --md3-on-primary: #ffffff;
+  --md3-on-primary-fixed: #25005a;
+  --md3-on-primary-container: #ede0ff;
+  --md3-inverse-surface: #332f39;
+  --md3-secondary: #9d4300;
+  --md3-secondary-container: #fd761a;
+  --md3-on-secondary: #ffffff;
+  --md3-on-secondary-container: #5c2400;
+  --md3-tertiary: #7d3d00;
+  --md3-tertiary-fixed: #ffdcc6;
+  --md3-tertiary-fixed-dim: #ffb784;
+  --md3-tertiary-container: #a15100;
+  --md3-on-tertiary: #ffffff;
+  --md3-on-tertiary-container: #ffe0cd;
+  --md3-error: #ba1a1a;
+  --md3-error-container: #ffdad6;
+  --md3-on-error: #ffffff;
+  --md3-on-error-container: #93000a;
+  --md3-success: #10B981;
+  --md3-success-light: #ECFDF5;
+  --md3-destructive: #EF4444;
+
+  /* Spacing (MASTER.md) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* Shadows (MASTER.md) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius (MASTER.md) */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Typography (MASTER.md) */
+  --font-primary: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-size-display: 32px;
+  --font-size-h1: 28px;
+  --font-size-h2: 24px;
+  --font-size-h3: 20px;
+  --font-size-h4: 18px;
+  --font-size-body-large: 16px;
+  --font-size-body: 14px;
+  --font-size-body-small: 12px;
+  --font-size-label: 12px;
+
+  /* Z-Index Scale */
+  --z-base: 0;
+  --z-sticky: 10;
+  --z-dropdown: 100;
+  --z-modal-overlay: 1000;
+  --z-modal: 1001;
+  --z-tooltip: 1100;
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --header-height: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--md3-on-surface);
+  background-color: var(--md3-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-primary);
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 24px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--md3-outline-variant);
+  border-radius: 10px;
+}
+
+/* No scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Highlight match */
+.highlight-match {
+  background-color: #FCD34D;
+  color: #1d1a24;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+/* Recording pulse animation */
+@keyframes pulse-red {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-pulse-red {
+  animation: pulse-red 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pulse-red {
+    animation: none;
+  }
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
